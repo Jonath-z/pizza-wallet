@@ -11,6 +11,7 @@ import {
   faDollarSign,
   faClockRotateLeft,
   faArrowsTurnRight,
+  faQrcode,
 } from "@fortawesome/free-solid-svg-icons";
 
 const MenuListItem = styled("li")`
@@ -107,6 +108,12 @@ function MenuItems() {
       <MenuListItem>
         <Link to="/activity">
           {menuItemButton("History", faClockRotateLeft, "/activity")}
+        </Link>
+      </MenuListItem>
+
+      <MenuListItem>
+        <Link to="/connect">
+          {menuItemButton("Connect", faQrcode, "/connect")}
         </Link>
       </MenuListItem>
     </StyledMenu>

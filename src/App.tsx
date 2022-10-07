@@ -22,6 +22,7 @@ import "./style.css";
 import MenuItems from "./components/MenuItems";
 import PizzaWalletLogo from "./assets/pizza-wallet-logo.svg";
 import styled from "styled-components";
+import QrReaderModal from "./components/QrReaderModal";
 
 const { Header, Sider, Content } = Layout;
 
@@ -234,6 +235,9 @@ const App = () => {
                     <div style={{ display: "flex", justifyContent: "center" }}>
                       <Onramper />
                     </div>
+                  </Route>
+                  <Route path="/connect">
+                    <QrReaderModal />
                   </Route>
                   <Route path="/">
                     <Redirect to="/dashboard" />
